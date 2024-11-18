@@ -138,9 +138,9 @@ export const categoryRouter = router({
     const { user } = ctx
     const categories = await db.eventCategory.createMany({
       data: [
-        { name: "Bug", emoji: "🐛", color: 0xff6b6b },
+        { name: "bug", emoji: "🐛", color: 0xff6b6b },
         { name: "sale", emoji: "💰", color: 0xffeb3b },
-        { name: "Question", emoji: "🤔", color: 0x6c5ce7 },
+        { name: "question", emoji: "🤔", color: 0x6c5ce7 },
       ].map((category) => ({
         ...category,
         userId: user.id,
@@ -183,6 +183,6 @@ export const categoryRouter = router({
 
       const hasEvents = category._count.events > 0
 
-      return c.json({hasEvents})
+      return c.json({ hasEvents })
     }),
 })
