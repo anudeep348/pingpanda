@@ -5,14 +5,14 @@ import { PropsWithChildren, useState } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
-import { CATEGORY_NAME_VALIDATOR } from "@/app/lib/validators/categoryValidator"
+import { CATEGORY_NAME_VALIDATOR } from "@/lib/validators/categoryValidator"
 import { register } from "module"
 import { Modal } from "./ui/Modal"
 import { Label } from "./ui/label"
 import { Input } from "./ui/input"
 import { Button } from "./ui/button"
 import { cn } from "@/lib/utils"
-import { client } from "@/app/lib/client"
+import { client } from "@/lib/client"
 
 const EVENT_CATEGORY_VALIDATOR = z.object({
   name: CATEGORY_NAME_VALIDATOR,

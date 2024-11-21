@@ -1,4 +1,4 @@
-import { CATEGORY_NAME_VALIDATOR } from "@/app/lib/validators/categoryValidator"
+import { CATEGORY_NAME_VALIDATOR } from "@/lib/validators/categoryValidator"
 import { FREE_QUOTA, PRO_QUOTA } from "@/config"
 import { db } from "@/db"
 import { DiscordClient } from "@/lib/DiscordClient"

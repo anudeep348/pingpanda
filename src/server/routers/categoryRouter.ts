@@ -3,7 +3,7 @@ import { router } from "../__internals/router"
 import { privateProcedure } from "../procedures"
 import { startOfDay, startOfMonth, startOfWeek } from "date-fns"
 import { z } from "zod"
-import { CATEGORY_NAME_VALIDATOR } from "@/app/lib/validators/categoryValidator"
+import { CATEGORY_NAME_VALIDATOR } from "@/lib/validators/categoryValidator"
 import { parseColor } from "@/lib/utils"
 import { HTTPException } from "hono/http-exception"
 

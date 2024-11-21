@@ -1,7 +1,7 @@
 "use client"
 
 import { useMutation, useQueryClient } from "@tanstack/react-query"
-import { client } from "../lib/client"
+import { client } from "../../lib/client"
 import Card from "@/components/ui/Card"
 import { Button } from "@/components/ui/button"
 import CreateEventCategoryModal from "@/components/CreateEventCategoryModal"

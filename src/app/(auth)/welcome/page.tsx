@@ -1,7 +1,7 @@
 "use client"
 // Sync auth status to db
 
-import { client } from "@/app/lib/client"
+import { client } from "@/lib/client"
 import Heading from "@/components/Heading"
 import LoadingSpinner from "@/components/LoadingSpinner"
 import { useQuery } from "@tanstack/react-query"

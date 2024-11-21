@@ -1,7 +1,7 @@
 "use client"
 
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
-import { client } from "../lib/client"
+import { client } from "../../lib/client"
 import LoadingSpinner from "@/components/LoadingSpinner"
 import { format, formatDistanceToNow } from "date-fns"
 import { ArrowRight, BarChart2, Clock, Database, Trash2 } from "lucide-react"
