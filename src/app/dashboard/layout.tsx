@@ -1,10 +1,19 @@
 "use client"
 
-import { buttonVariants } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import { Modal } from "@/components/ui/Modal"
 import { cn } from "@/lib/utils"
 import { UserButton } from "@clerk/nextjs"
-import { Gem, Home, Key, LucideIcon, Menu, Settings, X } from "lucide-react"
+import {
+  ArrowUpRight,
+  Gem,
+  Home,
+  Key,
+  LucideIcon,
+  Menu,
+  Settings,
+  X,
+} from "lucide-react"
 import Link from "next/link"
 import { PropsWithChildren, useState } from "react"
 import { Drawer } from "vaul"
@@ -86,6 +95,7 @@ const Sidebar = ({ onClose }: { onClose?: () => void }) => {
           showName
           appearance={{
             elements: {
+              rootBox: "py-2 px-4 text-start bg-slate-300 rounded-xl",
               userButtonBox: "flex-row-reverse",
             },
           }}
