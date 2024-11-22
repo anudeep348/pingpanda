@@ -4,7 +4,7 @@ import { ReactNode } from "react"
 import { Button } from "./ui/button"
 import { ArrowLeft } from "lucide-react"
 import Heading from "./Heading"
-import { useRouter } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
 
 interface DashboardPageProps {
   title: string
