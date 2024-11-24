@@ -7,6 +7,7 @@ import CreateEventCategoryModal from "@/components/CreateEventCategoryModal"
 import { Button } from "@/components/ui/button"
 import { PlusIcon } from "lucide-react"
 import { createCheckoutSession } from "@/lib/stripe"
+import PaymentSuccessModal from "@/components/PaymentSuccessModal"
 
 interface PageProps {
   searchParams: {
@@ -42,8 +43,11 @@ async function Page({ searchParams }: PageProps) {
     }
   }
 
+  const success = searchParams.success
+
   return (
     <>
+      {success ? <PaymentSuccessModal /> : null}
       <DashboardPage
         cta={
           <CreateEventCategoryModal>
