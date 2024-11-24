@@ -2,7 +2,7 @@ import DashboardPage from "@/components/DashboardPage"
 import { db } from "@/db"
 import { currentUser } from "@clerk/nextjs/server"
 import { redirect } from "next/navigation"
-import AccountSettings from "./AccountSettings"
+import ApiKeySettings from "./ApiKeySettings"
 
 async function Page() {
   const auth = await currentUser()
@@ -21,8 +21,8 @@ async function Page() {
     redirect("/login")
   }
   return (
-    <DashboardPage title="Account Settings">
-      <AccountSettings discordId={user.discordId ?? ""} />
+    <DashboardPage title="Api Key">
+      <ApiKeySettings apiKey={user.apiKey ?? ""} />
     </DashboardPage>
   )
 }
