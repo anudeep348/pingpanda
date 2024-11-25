@@ -29,7 +29,7 @@ function EmptyCategoryState({ categoryName }: { categoryName: string }) {
     if (hasEvents) router.refresh()
   }, [hasEvents, router])
 
-  const CODE_SNIPPET = `await fetch('https://localhost:3000/api/events', {
+  const CODE_SNIPPET = `await fetch('https://pingpanda-liard.vercel.app/api/events', {
     method: 'POST',
     headers: {
       'Authorization': 'Bearer YOUR_API_KEY'
